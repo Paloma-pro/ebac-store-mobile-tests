@@ -1,1 +1,1 @@
-{"total":0,"items":[]}
+{"total":3,"items":[{"uid":"ff9b43c34a817b44fa9b6edf61b00141","name":"My Login application","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"c4513ab8b0237c744893a02f5dc7ea83","name":"Product Details","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"be3151f8b882d0c00c9fb35012f49657","name":"Search","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
