@@ -4,11 +4,11 @@ export let hooksConf = {
             await driver.takeScreenshot();
             await driver.execute('mobile: terminateApp', { bundleId: 'br.com.lojaebac' })
         },
-        // beforeSuite: async function() {
-        beforeTest: async function() {
-                let state = await driver.queryAppState("br.com.lojaebac")
-            if (state !== 4) {
-                await driver.execute('mobile: launchApp', { bundleId: 'br.com.lojaebac' })
-            }
+    // beforeSuite: async function() {
+    beforeTest: async function() {
+            let state = await driver.queryAppState("br.com.lojaebac")
+        if (state !== 4) {
+            await driver.execute('mobile: launchApp', { bundleId: 'br.com.lojaebac' })
         }
+    }
 }

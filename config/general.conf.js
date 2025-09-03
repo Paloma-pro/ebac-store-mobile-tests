@@ -2,6 +2,7 @@ import { specsConf } from './specs.conf.js'
 import { suitesConf } from './suites.conf.js'
 import { reportersConf } from './reports.conf.js'
 import { hooksConf } from './hooks.conf.js'
+
 export let generalConf = {
     maxInstances: 1,
     logLevel: 'info',
