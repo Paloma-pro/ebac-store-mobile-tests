@@ -1,9 +1,9 @@
 import { $, $$ } from '@wdio/globals'
 
-class BrowsePage {
+class CheckoutPage {
 
-    get searchInput(){
-        return $(`-ios predicate string:name == "searchInput"`)
+    get addToCart(){
+        return $(`-ios predicate string:name == "addToCart"`)
     }
 
     get products(){
@@ -12,4 +12,4 @@ class BrowsePage {
     
 }
 
-export default new BrowsePage();
+export default new CheckoutPage();

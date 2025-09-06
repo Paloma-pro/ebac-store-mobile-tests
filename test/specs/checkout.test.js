@@ -2,6 +2,7 @@ import { expect, driver } from '@wdio/globals'
 import homePage from '../pageobjects/home.page.js'
 import loginPage from '../pageobjects/login.page.js'
 import profilePage from '../pageobjects/profile.page.js'
+import checkoutPage from '../pageobjects/checkout.page.js'
 
 describe('Do the checkout', () => {
     it('should login with valid credentials', async () => {
@@ -14,7 +15,7 @@ describe('Do the checkout', () => {
 
     it('should search products', async () => {
         await homePage.search()
-        await browsePage.searchInput.setValue('In')
+        await browsePage.searchInput.setValue('Camiseta')
         await browsePage.products.map(async product => {
             expect(await product.getText()).toContain('R$')
         })
@@ -22,10 +23,10 @@ describe('Do the checkout', () => {
     })
 
     it('should view product info', async () => {
-        await homePage.search()
-        await browsePage.searchInput.setValue('In')
+        // await homePage.search()
+        await browsePage.searchInput.setValue('Camiseta')
         await (await browsePage.products).at(0).click()
-        expect(productPage.getProductTitle('Ingrid Running Jacket')).toBeDisplayed()
+        expect(productPage.getProductTitle('Camiseta EBAC')).toBeDisplayed()
     })
 
     it('should add a product in cart', async () => {
