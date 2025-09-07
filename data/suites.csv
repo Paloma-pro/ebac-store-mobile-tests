@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Feb 18 20:55:46 UTC 2024","Sun Feb 18 20:55:51 UTC 2024","5759","","Product Details","","","","should view product info",""
-"passed","Sun Feb 18 20:55:18 UTC 2024","Sun Feb 18 20:55:27 UTC 2024","9249","","My Login application","","","","should login with valid credentials",""
-"passed","Sun Feb 18 20:56:10 UTC 2024","Sun Feb 18 20:56:15 UTC 2024","5390","","Search","","","","should search products",""
