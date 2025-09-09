@@ -32,4 +32,6 @@ describe('Do the checkout', () => {
     it('should add a product in cart', async () => {
         
     });
+
+    // Não finalizado devido a alteração no app da EBAC
 })

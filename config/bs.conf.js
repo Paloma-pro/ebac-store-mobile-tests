@@ -17,7 +17,15 @@ export let bsConf = {
             "appium:deviceName": "iPhone 15",
             "appium:platformVersion": "17",
             "appium:automationName": "XCUITest",
-            "appium:app": "bs://c3618f24102571c49b6d4bf608bdc0e678c125fa"
+            "appium:app": "bs://c3618f24102571c49b6d4bf608bdc0e678c125fa",
+            'bstack:options': {
+                projectName: "BrowserStack EBAC",
+                buildName: 'browserstack build',
+                sessionName: `Test ${process.env.PLATFORM}`,
+                "video": true,
+                "debug": true,
+                "networkLogs": true
+            }
         }
     ],
     commonCapabilities: {
